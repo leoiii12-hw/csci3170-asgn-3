@@ -113,4 +113,4 @@ FROM (
                 HAVING COUNT(*) = (SELECT MAX(COUNT(*))
                                    FROM SUPPORT
                                    GROUP BY SID))
-  ORDER BY R.RID DESC);
+  ORDER BY R.RID ASC);
